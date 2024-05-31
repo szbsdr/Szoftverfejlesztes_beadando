@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="980.0" style="-fx-background-color: aliceblue; -fx-font-size: 18;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pizza.model.SecondModel">
+   <left>
+      <VBox prefHeight="494.0" prefWidth="166.0" style="-fx-background-color: #9bebe3;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="134.0" prefWidth="166.0" text="Étlap" textAlignment="RIGHT" textFill="#ac08ae">
+               <font>
+                  <Font name="Bookman Old Style" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="105.0" prefWidth="800.0" style="-fx-background-color: #9bebe3;" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="next" layoutX="342.0" layoutY="40.0" mnemonicParsing="false" onAction="#switchScene" text="Tovább a rendeléshez" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="494.0" prefWidth="485.0" styleClass="root" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="74.0" layoutY="70.0" prefHeight="18.0" prefWidth="62.0" text="Alap" />
+            <Label alignment="CENTER" layoutX="291.0" layoutY="72.0" prefHeight="18.0" prefWidth="62.0" text="Méret" />
+            <Label alignment="CENTER" layoutX="454.0" layoutY="70.0" prefHeight="18.0" prefWidth="205.0" text="Feltétek" />
+            <CheckBox fx:id="feltetSonka" layoutX="460.0" layoutY="132.0" mnemonicParsing="false" text="Sonka" />
+            <CheckBox fx:id="feltetGomba" layoutX="460.0" layoutY="164.0" mnemonicParsing="false" text="Gomba" />
+            <CheckBox fx:id="feltetBacon" layoutX="460.0" layoutY="199.0" mnemonicParsing="false" text="Bacon" />
+            <CheckBox fx:id="feltetKolbasz" layoutX="460.0" layoutY="234.0" mnemonicParsing="false" text="Kolbász" />
+            <RadioButton fx:id="meret32" layoutX="273.0" layoutY="134.0" mnemonicParsing="false" text="32 cm" />
+            <RadioButton fx:id="meret45" layoutX="273.0" layoutY="164.0" mnemonicParsing="false" text="45 cm" />
+            <CheckBox fx:id="feltetSajt" layoutX="460.0" layoutY="267.0" mnemonicParsing="false" text="Sajt" />
+            <CheckBox fx:id="feltetCheedarsajt" layoutX="460.0" layoutY="299.0" mnemonicParsing="false" text="Cheedar sajt" />
+            <CheckBox fx:id="feltetFustoltsajt" layoutX="460.0" layoutY="334.0" mnemonicParsing="false" text="Füstölt sajt" />
+            <CheckBox fx:id="feltetFetasajt" layoutX="460.0" layoutY="369.0" mnemonicParsing="false" text="Feta sajt" />
+            <CheckBox fx:id="feltetHagyma" layoutX="609.0" layoutY="132.0" mnemonicParsing="false" text="Hagyma" />
+            <CheckBox fx:id="feltetUborka" layoutX="609.0" layoutY="164.0" mnemonicParsing="false" text="Uborka" />
+            <CheckBox fx:id="feltetOlivabogyo" layoutX="609.0" layoutY="199.0" mnemonicParsing="false" text="Olivabogyó" />
+            <CheckBox fx:id="feltetTejfol" layoutX="609.0" layoutY="234.0" mnemonicParsing="false" text="Tejfől" />
+            <CheckBox fx:id="feltetFokhagyma" layoutX="609.0" layoutY="267.0" mnemonicParsing="false" text="Fokhagyma" />
+            <CheckBox fx:id="feltetCsipospaprika" layoutX="609.0" layoutY="299.0" mnemonicParsing="false" text="Csípős paprika" />
+            <CheckBox fx:id="feltetKukorica" layoutX="609.0" layoutY="334.0" mnemonicParsing="false" text="Kukorica" />
+            <CheckBox fx:id="feltetAnanasz" layoutX="609.0" layoutY="369.0" mnemonicParsing="false" text="Ananász" />
+            <RadioButton fx:id="alapParadicsom" layoutX="27.0" layoutY="132.0" mnemonicParsing="false" text="Paradicsomomos" />
+            <RadioButton fx:id="alapTejfol" layoutX="27.0" layoutY="162.0" mnemonicParsing="false" text="Tejfölös" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
